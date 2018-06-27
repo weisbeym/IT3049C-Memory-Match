@@ -7,21 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Assignment 4: Memory Match</title>
 
-  <!-- Import style.css file -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  <!-- TODO: Create game title -->
+  <!-- title for the game -->
+  <h1 class="title">Guessing Game!</h1>
 
-  <!-- TODO: Create game description -->
-
+  <!-- game description -->
+  <div id="description">
+    Here we've got a 3 x 3 board, you have to guess which pairs match. Whomever gets 4/6 wins. Good luck!
+  </div>
+  
+  <div class="startScreen">
+    <button id="start">Start!</button>
+  </div>
   <!-- Optional: Reset button -->
   <!-- <button onclick="reset()">Reset</button> -->
 
   <!-- Game board container -->
   <div id="gameboard"></div>
 
-  <!-- TODO: Import game.js file -->
+  <script src="game.js"></script>
 </body>
 
 </html>

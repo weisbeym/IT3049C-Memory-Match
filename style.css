@@ -1,5 +1,31 @@
 body {
   text-align: center;
+  background-color: #F35B68;
+}
+
+.title {
+  color: #00BEB2; 
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+#description {
+  color: #1A5D63;
+  font-family: cursive;
+  font-size: 20px; 
+}
+
+#startScreen {
+  height: 200px;
+}
+
+#start {
+  font-family: fantasy;
+  font-size: 30px;
+  color:  #00BEB2;
+  background-color: #1A5D63;
+  margin: 10px;
+  padding: 5px 30px 5px 30px;
 }
 
 #gameboard {
