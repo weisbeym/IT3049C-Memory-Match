@@ -5,35 +5,8 @@ const gameboard = document.querySelector("#gameboard");
 // Placeholder for the first selected tile of each turn
 let selectedTile = null;
 
-// the symbols on the tiles 
-const tileValues = ["A", "A", "B", "B", "C", "C"];
-const selectedValues = [];
-const tileIds = [];
-const tilesFlipped = 0;
-
 // Global value to maintain number of turns
 let turnCount = 0;
-
-// shuffle function added to all arrays
-Array.prototype.shuffle = function() {
-  let i = this.length, j, temp;
-  while(--i > 0) {
-    j = Math.floor(Math.random() * (i + 1));
-    temp = this[j];
-    this[j] = this[i];
-    this[i] = temp;
-  }
-}
-
-function newBoard() {
-	tilesFlipped = 0;
-	let output = '';
-  tileValues.shuffle();
-	for(let i = 0; i < tileValues.length; i++){
-		output += '<div id="tile_'+i+'" onclick="FlipTile(this,\''+memory_array[i]+'\')"></div>';
-	}
-	document.getElementById('gameboard').innerHTML = output;
-}
 
 /**
  * 1d array containing objects that represent the game board state.
