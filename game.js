@@ -1,9 +1,9 @@
 "use strict";
 
 let countDown;
-const timeLoss;
-const scoreIncrementer;
-const flippedCards;
+let timeLoss;
+let scoreIncrementer;
+let flippedCards;
 const score = document.getElementsByClassName('score')[0];
 const timer = document.getElementsByClassName('timer')[0];
 const gameOver = document.getElementsByClassName('game_over')[0];

@@ -88,7 +88,7 @@ body {
 }
 
 .card .front {
-  background: url('../images/back.jpg');
+  background: url('images/back.png');
   background-size: cover;
   background-position: center;
 }
