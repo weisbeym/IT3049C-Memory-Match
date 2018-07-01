@@ -6,28 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Assignment 4: Memory Match</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  <!-- title for the game -->
-  <h1 class="title">Guessing Game!</h1>
+  <section class="game_over hidden">
+    <h1></h1>
+    <h2 class="final_score"></h2>
+    <h2 class="time"></h2>
+    <button>play again!</button>
+  </section>
 
-  <!-- game description -->
-  <div id="description">
-    Here we've got a 3 x 3 board, you have to guess which pairs match. Whomever gets 4/6 wins. Good luck!
-  </div>
-  
-  <div class="startScreen">
+  <div class="startScreen"></div>
+    <!-- title for the game -->
+    <h1 class="title">Guessing Game!</h1>
+    <!-- game description -->
+    <div id="description">
+      Here we've got a 3 x 3 board, you have to guess which pairs match. Whomever gets 4/6 wins. Good luck!
+    </div>
     <button id="start">Start!</button>
   </div>
-  <!-- Optional: Reset button -->
-  <!-- <button onclick="reset()">Reset</button> -->
-
-  <!-- Game board container -->
-  <div id="gameboard"></div>
-
+  
+  <section class='score'></section>
+  
+  <section class="gameboard hidden" >
+    <!--card 1-->
+    <div class='container'>
+      <div class='card'>
+        <div class='front'></div>
+        <div class='back'></div>
+      </div>
+    </div>
+    <!--card 2-->
+    <div class='container'>
+      <div class='card'>
+        <div class='front'></div>
+        <div class='back'></div>
+      </div>
+    </div>
+    <!--card 3-->
+    <div class='container'>
+      <div class='card'>
+        <div class='front'></div>
+        <div class='back'></div>
+      </div>
+    </div> 
+    <!--card 4-->
+    <div class='container'>
+      <div class='card'>
+        <div class='front'></div>
+        <div class='back'></div>
+      </div>
+    </div> 
+    <!--card 5-->
+    <div class='container'>
+      <div class='card'>
+        <div class='front'></div>
+        <div class='back'></div>
+      </div>
+    </div> 
+    <!--card 6-->
+    <div class='container'>
+      <div class='card'>
+        <div class='front'></div>
+        <div class='back'></div>
+      </div>
+    </div> 
+  </section>
+  <section class='timer'></section>
   <script src="game.js"></script>
 </body>
 
