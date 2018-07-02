@@ -43,7 +43,7 @@ function drawBoard() {
     if(card[i].classList.contains("flipped")) {
       card[i].classList.toggle("flipped");
     }
-    card[i].querySelector('.back').style.backgroundImage = pics[i];
+    card[i].querySelector('.back').style.backgroundImage = images[i];
     card[i].addEventListener('click', flip);
   }
 
