@@ -1,0 +1,19 @@
+{
+  "name": "it3049c-memory-match",
+  "version": "1.0.0",
+  "description": "Basic memory match game using html,css, and js",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.uc.edu/weisbeym/IT3049C-Memory-Match.git"
+  },
+  "keywords": [
+    "memory-match",
+    "JavaScript"
+  ],
+  "author": "me",
+  "license": "ISC"
+}
